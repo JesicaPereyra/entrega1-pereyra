@@ -19,15 +19,9 @@ nombrar ()
 
 
 const productos = [
-    {nombre: "fotos"},
-    {nombre: "cuadros"},
-    {nombre: "álbumes"},
-    {nombre: "regalos especiales"},
-    {nombre: "decoración"},
-    {nombre: "novios"},
-    {nombre: "niños"},
+     "fotos","cuadros","álbumes","regalos especiales","decoración","novios","niños",
 ]
-// let carrito = []
+const catalogo = productos.join ("\n-")
 
 let conocer = prompt ("¿Te gustaría conocer nuestro catálogo completo, si o no?")
 while (conocer !== "si" && conocer !== "no"){
@@ -35,8 +29,9 @@ while (conocer !== "si" && conocer !== "no"){
 }
 if (conocer == "si"){
     alert ("echa un vistazo a nuestro catálogo")
-    let recorrer = productos.map ((producto)=> producto.nombre)
-    alert (recorrer.join ("/"))
+    alert ("-" + catalogo)
+}else {
+    alert ("Bueno, muchas gracias")
 }
 
 let elección = prompt ("¿Qué te gustaría comprar?")
@@ -59,7 +54,6 @@ switch (elección){
         break;
 }
 
-// Quiero que al poner una opción no valida
-//  y consulte si quiere seguir comprando que vuelva a aparecer 
-//  Qué te gustaría comprar y su respectiva respuesta, con los ciclos no logré realizarlo
+// Quiero que al salir opción no valida y despues de aceptar seguir comprando, que vuelva a aparecer 
+//  ¿Qué te gustaría comprar? y su respectiva respuesta, con los ciclos no logré realizarlo, nose si se puede o con alguna otra herramienta.
 
